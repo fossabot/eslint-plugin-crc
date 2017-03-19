@@ -21,6 +21,9 @@
     "url": "http://swindle.net"
   },
   "main": "lib/index.js",
+  "bin": {
+    "crc-model-cli": "./lib/crc-model-cli.js"
+  },
   "scripts": {
     "changelog": "./node_modules/.bin/conventional-changelog -p angular -i CHANGELOG.md -s",
     "docs": "npm run docs2html && npm run docs2md",
@@ -70,10 +73,12 @@
   },
   "dependencies": {
     "babel-register": "^6.24.0",
+    "commander": "https://registry.npmjs.org/commander/-/commander-2.9.0.tgz",
     "eslint": "^3.18.0",
     "espree": "^3.4.0",
     "esrefactor": "^0.1.0",
     "estraverse": "^4.2.0",
+    "glob": "https://registry.npmjs.org/glob/-/glob-7.1.1.tgz",
     "global": "^4.3.1",
     "lodash": "^4.17.4",
     "minami": "^1.1.1",
