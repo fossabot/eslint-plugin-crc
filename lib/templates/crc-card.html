@@ -1,5 +1,6 @@
+<h2>Class-Responsibility-Collaboration Model</h2>
 <!-- crc-model-template:html,markdown -->
-<% _.forEach(models, function(crc) { %>
+<% _.forEach(crcModelList.models, function(crc) { %>
 <table width="100%">
   <thead style="background-color:#eee">
     <tr valign="top" align="left">
@@ -21,7 +22,7 @@
       <td width="50%">
         <ol><% _.forEach(crc.collaborators, function(collaborator) { %>
             <li><code><%- collaborator.name %></code><% var start = collaborator.loc.start %>
-              <a style="font-size:small"><%- start.line %>:<%- start.column %></a>
+              <small><a><%- start.line %>:<%- start.column %></a></small>
             </li><% }); %></ol>
       </td>
     </tr>
@@ -29,3 +30,8 @@
 </table>
 <% }); %>
 <!--/crc-model-template:html,markdown -->
+<hr>
+<div class="footer">
+Created on <%- meta.publication.created.localeFormat %> with
+  <a href="<%- meta.generator.url %>"><code><%- meta.generator.name %>, v<%- meta.generator.version %></code></a>.
+</div>

@@ -40,9 +40,14 @@ describe('CrcModelFormatter', function () {
 
     it('takes a template string', function () {
         expect(formatter.template).to.exist();
-        formatter = new CrcModelFormatter();
-        expect(formatter.template).not.to.exist();
     });
+
+    it('loads a default template if one isn\'t provided', function () {
+        formatter = new CrcModelFormatter();
+        expect(formatter.template).to.exist();
+    });
+
+    it('throws an error if a template file cannot be found');
 
     it('formats an CrcModelList as an HTML/markdown-friendly report of CRC "cards"', function () {
         let report;

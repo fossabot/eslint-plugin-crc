@@ -52,6 +52,7 @@ describe('CrcModels represent objects\' behaviors and dependencies. A CrcModel',
             'identifier',
             'declaration',
             'context',
+            'source',
             'superClass'
         );
     });
