@@ -55,3 +55,8 @@ reports
 
 # Local tasks
 *.tasks.*
+
+# Temp stuff
+.tmp
+.temp
+temp
