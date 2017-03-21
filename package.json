@@ -2,6 +2,7 @@
   "name": "eslint-plugin-crc",
   "version": "0.1.4",
   "description": "Analyze and refactor JavaScript codebases with auto-generated Class-Responsibility-Collaboration models.",
+  "homepage": "https://github.com/gregswindle/eslint-plugin-crc",
   "keywords": [
     "refactoring",
     "refactor",
@@ -78,6 +79,8 @@
     "espree": "^3.4.0",
     "esrefactor": "^0.1.0",
     "estraverse": "^4.2.0",
+    "find-package": "1.0.0",
+    "git-rev-sync": "https://registry.npmjs.org/git-rev-sync/-/git-rev-sync-1.8.0.tgz",
     "glob": "https://registry.npmjs.org/glob/-/glob-7.1.1.tgz",
     "global": "^4.3.1",
     "lodash": "^4.17.4",

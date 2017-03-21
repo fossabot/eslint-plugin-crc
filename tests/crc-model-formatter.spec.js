@@ -19,7 +19,7 @@ chai.use(dirtyChai);
 describe('CrcModelFormatter', function () {
     let crcModelList, formatter, template, libFilePath, code;
 
-    beforeEach(function () {
+    before(function () {
         libFilePath = relativePath(codeFixturePath);
         code = fs.readFileSync(libFilePath);
         libFilePath = path.join(__dirname, '../lib/templates/crc-card.html');
@@ -28,7 +28,7 @@ describe('CrcModelFormatter', function () {
         formatter = new CrcModelFormatter(template);
     });
 
-    afterEach(function () {
+    after(function () {
         template = null;
         _.map(crcModelList.models, function (model) {
             model.responsibilities = null;
@@ -40,6 +40,7 @@ describe('CrcModelFormatter', function () {
 
     it('takes a template string', function () {
         expect(formatter.template).to.exist();
+        console.log(formatter.data.meta.repository);
     });
 
     it('loads a default template if one isn\'t provided', function () {

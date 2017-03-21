@@ -1,4 +1,7 @@
 <h2>Class-Responsibility-Collaboration Model</h2>
+<h3>for <code><a href="<%- meta.module.homepage %>"><%- meta.module.name %></a></code>, <code>v<%- meta.module.version %></code>
+  <br><strong>branch</strong> <code><a href="<%- meta.repository.url %>"><%- meta.repository.branch %></a></code>
+</h3>
 <!-- crc-model-template:html,markdown -->
 <% _.forEach(crcModelList.models, function(crc) { %>
 <table width="100%">
@@ -32,6 +35,6 @@
 <!--/crc-model-template:html,markdown -->
 <hr>
 <div class="footer">
-Created on <%- meta.publication.created.localeFormat %> with
-  <a href="<%- meta.generator.url %>"><code><%- meta.generator.name %>, v<%- meta.generator.version %></code></a>.
+Created on <span style="font-family: Lucida Console, Monaco, Courier, Courier New"><%- meta.publication.created %></span> with
+<a href="<%- meta.generator.url %>"><code><%- meta.generator.name %></code></a>.
 </div>
